@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int amount;
+	double balance;
+	double rem_balance;
+	scanf("%d",&amount);
+	scanf("%lf",&balance);
+	if(amount%5==0)
+	    {
+	    if(amount<balance && ((amount+0.5)<=balance))
+	{
+	rem_balance=balance-amount-(0.5);
+	printf("%.2lf",rem_balance);
+	}
+	else 
+	printf("%.2lf",balance);
+	    }
+	    else
+	    printf("%.2lf",balance);
+
+	return 0;
+}
+	
